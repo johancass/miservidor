@@ -7,7 +7,7 @@ mercadopago.configure({
 });
 
 const router = express.Router();
-
+const PORT = process.env.PORT || 4000;
 /**
  * Ruta: GET /generar-pago
  * Query Params:
