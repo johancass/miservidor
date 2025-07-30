@@ -3,7 +3,7 @@ const mercadopago = require('mercadopago');
 
 // Configura tu token de acceso desde variables de entorno
 mercadopago.configure({
-  access_token: process.env.MP_ACCESS_TOKEN
+  access_token: process.env.srv-d24s0dili9vc73ekhgn0
 });
 
 const router = express.Router();
