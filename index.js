@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Servidor escuchando en puerto ${PORT}`);
 });
-const express = require('express');
+
 const axios = require('axios');
 require('dotenv').config();
 
