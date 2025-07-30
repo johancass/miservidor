@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 
-const generarPagoRouter = require("./genrar_pago");
+const generarPagoRouter = require("./Generar_pago");
 
 const app = express();
 const PORT = process.env.PORT || 4000;
