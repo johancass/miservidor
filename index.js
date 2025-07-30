@@ -3,10 +3,12 @@ const path = require("path");
 
 const app = express();
 const PORT = process.env.PORT || 4000;
-
+// Importa el router para generar pagos
+const generarPagoRouter = require("./Generar_pago.js");
 // Middleware para parsear JSON si necesitas POST (opcional)
 app.use(express.json());
-
+// Monta el router ANTES de otras rutas, en la ruta /generar-pago
+app.use("/generar-pago", generarPagoRouter);
 
 // Ruta raíz: muestra formulario para consultar estado de pago
 app.get("/", (req, res) => {
