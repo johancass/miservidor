@@ -7,7 +7,7 @@ mercadopago.configure({
 });
 
 const router = express.Router();
-const PORT = process.env.PORT || 4000;
+
 /**
  * Ruta: GET /generar-pago
  * Query Params:
@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 4000;
  *   precio      - precio en COP (requerido)
  *   external_reference - referencia externa / usuario_id (opcional)
  */
-router.get('/generar-pago', async (req, res) => {
+router.get('/', async (req, res) => {
   const descripcion = req.query.descripcion || 'Producto';
   const precio = parseFloat(req.query.precio);
   const external_reference = req.query.external_reference || '';
