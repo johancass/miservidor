@@ -3,7 +3,7 @@ const axios = require('axios');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 1000;
+const PORT = process.env.PORT || 10000;
 
 app.get('/verificar_pago', async (req, res) => {
   const paymentId = req.query.payment_id;
